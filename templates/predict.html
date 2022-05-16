@@ -80,16 +80,17 @@
 
     <!-- For demo purpose -->
     <header class="text-white text-center">
-        <h1 class="display-4" onClick="location.href='/'" > Object detection </a> </h1>
-        <p class="lead mb-0">object detection by uploding image </p>
+        <h1 class="display-4" onClick="location.href='/'" > Object Detection </a> </h1>
+        <p class="lead mb-0">Object Detection by uploding image </p>
         
         <img src="https://res.cloudinary.com/mhmd/image/upload/v1564991372/image_pxlho1.svg" alt="" width="150" class="mb-4">
     </header>
 	
-
+<p style="text-align:center;"><b >{{ num }}</b></p>
 <form action="{{ url_for('predict')}}" method="post" enctype="multipart/form-data">
     <div class="row py-4">
         <div class="col-lg-6 mx-auto">
+		
 
             
 

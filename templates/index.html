@@ -9,7 +9,7 @@
 	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-	   <link rel="stylesheet" href="css/style.css">
+	 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
     <style>
@@ -79,14 +79,13 @@
 				  font-family: 'Poppins', sans-serif;
 				}
 
-				section{
-				  width: 100%;
-				  height: 100vh;
+				body{
+				 
 				  background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
 				  background-size: 400% 400%;
-				  position: relative;
+				  
 				  animation: animate 7.5s ease-in-out infinite;
-				  display: flex;
+				  
 				  justify-content: center;
 				  align-items: center;
 				}
@@ -95,7 +94,7 @@
 				  color: #fff;
 				  background: rgba(255,255,255,.2);
 				  padding: 20px;
-				  font-size: 50px;
+
 				  border-radius: 10px;
 				}
 
@@ -151,14 +150,13 @@
 
     <!-- For demo purpose -->
     <header class="text-white text-center">
-        <h1 class="display-4" >Object detection </h1>
-        <p class="lead mb-0">object detection by uploding image </p>
+        <h1 class="display-4" >Object Detection </h1>
+        <p class="lead mb-0">Object Detection by uploding image </p>
         
         
         <img src="https://res.cloudinary.com/mhmd/image/upload/v1564991372/image_pxlho1.svg" alt="" width="150" class="mb-4">
     </header>
-	<p style="text-align:center;"><b >{{ prediction_text }}</b></p>
-
+	
 <form action="{{ url_for('predict')}}" method="post" enctype="multipart/form-data">`
     <div class="row py-4">
         <div class="col-lg-6 mx-auto">

@@ -31,7 +31,7 @@ def predict():
     
    
     
-    return render_template('predict.html', code=image.filename )
+    return render_template('predict.html', num=detect_and_draw_box(image.filename), code=image.filename )
 
 if __name__ == "__main__":
     app.run(debug=True)
